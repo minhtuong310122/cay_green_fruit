@@ -1,1 +1,31 @@
 vi:
+  layouts:
+    header:
+      text_header: "Đăng Nhập"
+      text_header1: "Giỏ Hàng"
+      home: "Trang chủ"
+      shop: "Cửa hàng"
+      product: "Sản phẩm"
+      meat: "Thịt"
+      fish: "Cá"
+      fruit: "Hoa quả"
+      green: "Rau xanh"
+      text_header2: "Về Green Fruit"
+      search: "Tìm kiếm"
+      text_header3: "Thông tin tìm kiếm"
+
+    footer:
+      purchase: "Mua Hàng"
+      text_footer: "Trái cây tươi"
+      text_footer1: "Thịt nhập khẩu"
+      text_footer2: "Hạt - Trái cây khô"
+      text_footer3: "Dịch vụ doang nghiệp"
+      promotion: "Khuyến mãi"    
+      text_footer4: "Hỗ trợ khách hàng"
+      text_footer5: "Khách hàng thân thiết"
+      text_footer6: "Thiết kế theo yêu cầu"
+      text_footer7: "Theo dõi đơn hàng"
+      text_footer8: "Kết nối với chúng tôi"
+      telephone: "Điên thoại"
+      address: "Địa chỉ"
+

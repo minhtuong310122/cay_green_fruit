@@ -1,0 +1,53 @@
+<header>
+	<div class="navbar navbar-expand-lg navbar-light bg-dark navbar-dark">
+		<div class="header">
+			<%= link_to "Green Fruit", root_path, id: "logo" %>
+			<div class="form-inline my-2 my-lg-0">
+	      <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><%= t ".text_header" %></button>
+	      <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><%= t ".text_header1" %> | 
+	      	<i class="fa-solid fa-cart-shopping"></i></button>
+	    </div>
+    </div>
+	</div>
+
+	<div class="navbar navbar-expand-lg navbar-light bg-dark navbar-dark">
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#"><%= t ".home" %><span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#"><%= t ".shop" %></a>
+	      </li>
+	      <li class="nav-item active dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          <%= t ".product" %>
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#"><%= t ".meat" %></a>
+	          <a class="dropdown-item" href="#"><%= t ".fish" %></a>
+	          <a class="dropdown-item" href="#"><%= t ".fruit" %></a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#"><%= t ".green" %></a>
+	        </div>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link disabled" href="#"><%= t ".text_header2" %></a>
+	      </li>
+	      <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+            Language <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><%= link_to "English", locale: "en" %></li>
+            <li class="dropdown-item"><%= link_to "Vietnamese", locale: "vi" %></li>
+          </ul>
+        </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><%= t ".search" %></button>
+	    </form>
+	  </div>
+	</div>
+</header>
