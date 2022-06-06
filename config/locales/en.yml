@@ -1,1 +1,30 @@
 en:
+  layouts:
+    header:
+      text_header: "Log in"
+      text_header1: "Cart"
+      home: "Home"
+      shop: "Shop"
+      product: "Product"
+      meat: "Meat"
+      fish: "Fish"
+      fruit: "Fruit"
+      green: "Green vegetables"
+      text_header2: "About Green Fruit"
+      search: "Search"
+      text_header3: "Search information"
+
+    footer:
+      purchase: "Purchase"
+      text_footer: "Fresh fruit"
+      text_footer1: "Imported meat"
+      text_footer2: "Seeds - Dried fruit"
+      text_footer3: "Business services"
+      promotion: "Promotion"
+      text_footer4: "Customer support"
+      text_footer5: "Loyal customers"
+      text_footer6: "Design upon request"
+      text_footer7: "Order tracking"
+      text_footer8: "Connect with us"
+      telephone: "Telephone"
+      address: "Address"
