@@ -3,7 +3,26 @@
 		<div class="header">
 			<%= link_to "Green Fruit", root_path, id: "logo" %>
 			<div class="form-inline my-2 my-lg-0">
-	      <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><%= t ".text_header" %></button>
+				<% if logged_in? %>
+          <li class="nav-item dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <%= current_user.fullname %> <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><%= link_to "Profile", current_user %></li>
+              <li class="dropdown-item"><%= link_to "Settings", '#' %></li>
+              <li class="divider"></li>
+              <li class="dropdown-item">
+                <%= link_to "Log out", logout_path, method: "delete" %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+	      	<%= link_to t(".text_header"), login_path %>
+	      	</button>
+	      	<button class="btn btn-outline-info my-2 my-sm-0" type="submit"><%= link_to t(".sign_up"), signup_path %></button>
+        <% end %>
 	      <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><%= t ".text_header1" %> | 
 	      	<i class="fa-solid fa-cart-shopping"></i></button>
 	    </div>
