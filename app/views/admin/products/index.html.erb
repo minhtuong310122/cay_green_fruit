@@ -1,0 +1,31 @@
+<p>Danh sach product</p>
+
+<%= link_to "<button class='btn btn-outline-success'>Product New</button>".html_safe, new_admin_product_path %>
+
+<table style="border-collapse: collapse;">
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Price</th>
+		<th>Quantity</th>
+		<th>Category</th>
+		<th>Description</th>
+		<th>Image</th>
+		<th>Action</th>
+	</tr>
+  <% @products.map do |product| %>
+		<tr>
+			<td><%= product.id %></td>
+			<td><%= product.name %></td>
+			<td><%= product.price %></td>
+			<td><%= product.quantity %></td>
+			<td><%= product.category_id %></td>
+			<td><%= product.description %></td>
+			<td><%= product.image %></td>
+			<td>
+				<%= link_to "<button class='btn btn-outline-info'>Edit</button>".html_safe,  edit_admin_product_path(nil, product) %>
+				<%= link_to "<button class='btn btn-outline-danger'>Delete</button>".html_safe, admin_product_path(nil, product), method: :delete %>	
+			</td>
+		</tr>
+	<% end %>
+</table>
